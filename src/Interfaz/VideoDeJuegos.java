@@ -36,13 +36,11 @@ public class VideoDeJuegos extends javax.swing.JFrame {
         btnAnadir = new javax.swing.JButton();
         cmbJuegos = new javax.swing.JComboBox<>();
         jLabel3 = new javax.swing.JLabel();
-        jSeparator1 = new javax.swing.JSeparator();
         jButton1 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(600, 600));
         setMinimumSize(new java.awt.Dimension(600, 600));
         getContentPane().setLayout(null);
 
@@ -56,6 +54,11 @@ public class VideoDeJuegos extends javax.swing.JFrame {
 
         txtNombreV.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         txtNombreV.setBorder(null);
+        txtNombreV.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNombreVActionPerformed(evt);
+            }
+        });
         jPanel1.add(txtNombreV);
         txtNombreV.setBounds(40, 170, 360, 40);
 
@@ -85,10 +88,6 @@ public class VideoDeJuegos extends javax.swing.JFrame {
         jLabel3.setText("LISTA OFICIAL");
         jPanel1.add(jLabel3);
         jLabel3.setBounds(220, 240, 180, 30);
-
-        jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel1.add(jSeparator1);
-        jSeparator1.setBounds(40, 210, 360, 40);
 
         jButton1.setBackground(new java.awt.Color(102, 255, 51));
         jButton1.setFont(new java.awt.Font("Arial", 3, 36)); // NOI18N
@@ -130,6 +129,10 @@ public class VideoDeJuegos extends javax.swing.JFrame {
         menu.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void txtNombreVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreVActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNombreVActionPerformed
 
     /**
      * @param args the command line arguments
@@ -177,7 +180,6 @@ public class VideoDeJuegos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTextField txtNombreV;
     // End of variables declaration//GEN-END:variables
 }
